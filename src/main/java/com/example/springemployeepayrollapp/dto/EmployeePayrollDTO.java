@@ -1,5 +1,8 @@
 package com.example.springemployeepayrollapp.dto;
 
+import lombok.Data;
+
+@Data
 public class EmployeePayrollDTO {
 
     public int employeeId;
@@ -7,27 +10,27 @@ public class EmployeePayrollDTO {
     public long salary;
 
 
-    public int getEmployeeId() {
-        return employeeId;
-    }
-
-    public void setEmployeeId(int employeeId) {
-        this.employeeId = employeeId;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public long getSalary() {
-        return salary;
-    }
-
-    public void setSalary(long salary) {
-        this.salary = salary;
-    }
+//    public int getEmployeeId() {
+//        return employeeId;
+//    }
+//
+//    public void setEmployeeId(int employeeId) {
+//        this.employeeId = employeeId;
+//    }
+//
+//    public String getName() {
+//        return name;
+//    }
+//
+//    public void setName(String name) {
+//        this.name = name;
+//    }
+//
+//    public long getSalary() {
+//        return salary;
+//    }
+//
+//    public void setSalary(long salary) {
+//        this.salary = salary;
+//    }
 }
