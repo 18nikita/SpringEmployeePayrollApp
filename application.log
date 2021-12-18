@@ -32,3 +32,14 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 2021-12-17 21:36:03.743  INFO 7248 --- [restartedMain] .e.s.SpringEmployeePayrollAppApplication : No active profile set, falling back to default profiles: default
 2021-12-17 21:36:08.329  WARN 7248 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2021-12-17 21:36:08.820  INFO 7248 --- [restartedMain] .e.s.SpringEmployeePayrollAppApplication : Started SpringEmployeePayrollAppApplication in 6.023 seconds (JVM running for 8.352)
+<<<<<<< HEAD
+=======
+2021-12-17 22:12:22.349  INFO 7688 --- [restartedMain] .e.s.SpringEmployeePayrollAppApplication : Starting SpringEmployeePayrollAppApplication using Java 11.0.12 on DESKTOP-19ENGJK with PID 7688 (D:\Nikita CFP\SpringBoot\Spring Emp Payroll App\SpringEmployeePayrollApp\target\classes started by Nikita in D:\Nikita CFP\SpringBoot\Spring Emp Payroll App\SpringEmployeePayrollApp)
+2021-12-17 22:12:22.352 DEBUG 7688 --- [restartedMain] .e.s.SpringEmployeePayrollAppApplication : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-17 22:12:22.352  INFO 7688 --- [restartedMain] .e.s.SpringEmployeePayrollAppApplication : The following profiles are active: dev
+2021-12-17 22:12:26.507  WARN 7688 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-17 22:12:26.945  INFO 7688 --- [restartedMain] .e.s.SpringEmployeePayrollAppApplication : Started SpringEmployeePayrollAppApplication in 5.51 seconds (JVM running for 8.099)
+2021-12-17 22:12:26.949  INFO 7688 --- [restartedMain] .e.s.SpringEmployeePayrollAppApplication : Employee Payroll App Started in DEV Environment
+2021-12-17 22:12:26.951  INFO 7688 --- [restartedMain] .e.s.SpringEmployeePayrollAppApplication : Employee Payroll DB User is Nikita
+2021-12-17 22:12:26.951  INFO 7688 --- [restartedMain] .e.s.SpringEmployeePayrollAppApplication : Test message of Slf4j
+>>>>>>> a1dc38f862737e9cb571511a79cfbec8c8644123

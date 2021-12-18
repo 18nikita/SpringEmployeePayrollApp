@@ -17,7 +17,6 @@ public class EmployeePayrollServices implements IEmployeePayrollService{
     @Autowired
     EmployeeRepository employeeRepository;
 
-
     @Override
     public List<EmployeePayrollData> getEmployeePayrollData() {
         return employeePayrollList;
