@@ -1,18 +1,8 @@
 package com.example.springemployeepayrollapp.model;
 
+
 import com.example.springemployeepayrollapp.dto.EmployeePayrollDTO;
-import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import java.time.LocalDate;
-import java.util.List;
-
-//@Entity
-//@Table(name = "employee")
-@Data
 public class EmployeePayrollData {
     private int employeeId;
     private String name;
@@ -26,5 +16,22 @@ public class EmployeePayrollData {
         this.salary = empPayrollDTO.salary;
     }
 
-
+    public int getEmployeeId() {
+        return employeeId;
+    }
+    public void setEmployeeId(int employeeId) {
+        this.employeeId = employeeId;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public long getSalary() {
+        return salary;
+    }
+    public void setSalary(long salary) {
+        this.salary = salary;
+    }
 }
