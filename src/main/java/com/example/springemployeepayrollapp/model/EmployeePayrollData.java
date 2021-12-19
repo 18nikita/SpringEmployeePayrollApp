@@ -1,55 +1,30 @@
 package com.example.springemployeepayrollapp.model;
 
 import com.example.springemployeepayrollapp.dto.EmployeePayrollDTO;
+import lombok.Data;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.time.LocalDate;
+import java.util.List;
 
-@Entity
-@Table(name = "employee")
+//@Entity
+//@Table(name = "employee")
+@Data
 public class EmployeePayrollData {
-    @Id
-    @Column(name = "employeeId")
     private int employeeId;
-
-    @Column(name = "name")
     private String name;
-
-    @Column(name = "salary")
     private long salary;
-    public EmployeePayrollData(int employeeId, String name, long salary) {
-        this.employeeId = employeeId;
-        this.name = name;
-        this.salary = salary;
-    }
 
-    public EmployeePayrollData(int employeeId, EmployeePayrollDTO empPayrollDTO) {
+    public EmployeePayrollData() {}
 
-    }
-
-    public EmployeePayrollData() {
-
+    public EmployeePayrollData(int empId, EmployeePayrollDTO empPayrollDTO) {
+        this.employeeId = empId;
+        this.name= empPayrollDTO.name;
+        this.salary = empPayrollDTO.salary;
     }
 
 
-    public int getEmployeeId() {
-        return employeeId;
-    }
-    public void setEmployeeId(int employeeId) {
-        this.employeeId = employeeId;
-    }
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-    public long getSalary() {
-        return salary;
-    }
-    public void setSalary(long salary) {
-        this.salary = salary;
-    }
 }

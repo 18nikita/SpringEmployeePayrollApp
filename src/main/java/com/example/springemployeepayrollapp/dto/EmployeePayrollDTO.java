@@ -1,36 +1,22 @@
 package com.example.springemployeepayrollapp.dto;
 
-import lombok.Data;
-
-@Data
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
 public class EmployeePayrollDTO {
 
-    public int employeeId;
+    @NotEmpty(message = "Employee Name can't be null")
     public String name;
+
+    @Min(value = 500, message = "Min Wage should be more than 500")
     public long salary;
 
+    public EmployeePayrollDTO(String name, long salary) {
+        this.name = name;
+        this.salary = salary;
+    }
 
-//    public int getEmployeeId() {
-//        return employeeId;
-//    }
-//
-//    public void setEmployeeId(int employeeId) {
-//        this.employeeId = employeeId;
-//    }
-//
-//    public String getName() {
-//        return name;
-//    }
-//
-//    public void setName(String name) {
-//        this.name = name;
-//    }
-//
-//    public long getSalary() {
-//        return salary;
-//    }
-//
-//    public void setSalary(long salary) {
-//        this.salary = salary;
-//    }
+    @Override
+    public String toString() {
+        return "Name=" + name + " Salary=" + salary;
+    }
 }
