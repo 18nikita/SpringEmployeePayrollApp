@@ -1,6 +1,5 @@
 package com.example.springemployeepayrollapp.dto;
 
-
 import lombok.Data;
 
 public @Data
@@ -12,5 +11,4 @@ class ResponseDTO {
         this.message = message;
         this.data = data;
     }
-
 }
